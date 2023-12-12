@@ -16,7 +16,7 @@ slowSpeed := speed * 0.3
         BlockInput, Off
 return
 
-; Mode:cursorでのWASDカーソル操作
+; Mode:cursorでの操作
 #If (cursorMode)
 
     ; 速度調整
@@ -34,5 +34,11 @@ return
     ; マウスクリック
     Q::Click Left
     E::Click Right
+
+    ; ALT + Wでマウスホイール上スクロール
+    !w::MouseClick, WheelUp
+
+    ; ALT + Sでマウスホイール下スクロール
+    !s::MouseClick, WheelDown
 
 #If
