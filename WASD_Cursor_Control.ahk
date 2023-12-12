@@ -1,49 +1,40 @@
+#NoEnv
 #Persistent
-#SingleInstance force
+SendMode Input
+SetWorkingDir %A_ScriptDir%
 
-; カーソル操作モードをトグルするための変数
 cursorMode := false
+speed := 70
+slowSpeed := speed * 0.1
 
-; カーソル操作モードのトグル
-^!d::  ; Ctrl+Alt+Dを押すとトグル
-    cursorMode := !cursorMode
-    Tooltip, Cursor mode: %cursorMode%  ; トグル状態を示すツールチップを表示
-    SetTimer, RemoveTooltip, 1500  ; ツールチップを1.5秒後に削除
+; Fキーでモード切替
+F::
+    if (A_PriorHotkey = "F" and A_TimeSincePriorHotkey < 400) {
+        cursorMode := !cursorMode
+        if cursorMode
+            BlockInput, On
+        else
+            BlockInput, Off
+    }
 return
 
-RemoveTooltip:
-    Tooltip  ; ツールチップを削除
-return
+; Mode:cursorでのWASDカーソル操作
+#If (cursorMode)
 
-; カーソル操作用のホットキー機能
-w::
-if (cursorMode) {
-    MouseMove, 0, -10, 0, R  ; 上に10ピクセル動かす
-} else {
-    Send w  ; 通常のWキーとして機能
-}
-return
+    ; 速度調整
+    +W::MouseMove, 0, -slowSpeed, 0, R
+    +A::MouseMove, -slowSpeed, 0, 0, R
+    +S::MouseMove, 0, slowSpeed, 0, R
+    +D::MouseMove, slowSpeed, 0, 0, R
 
-a::
-if (cursorMode) {
-    MouseMove, -10, 0, 0, R  ; 左に10ピクセル動かす
-} else {
-    Send a  ; 通常のAキーとして機能
-}
-return
+    ; 通常速度
+    W::MouseMove, 0, -speed, 0, R
+    A::MouseMove, -speed, 0, 0, R
+    S::MouseMove, 0, speed, 0, R
+    D::MouseMove, speed, 0, 0, R
 
-s::
-if (cursorMode) {
-    MouseMove, 0, 10, 0, R  ; 下に10ピクセル動かす
-} else {
-    Send s  ; 通常のSキーとして機能
-}
-return
+    ; マウスクリック
+    Q::Click Left
+    E::Click Right
 
-d::
-if (cursorMode) {
-    MouseMove, 10, 0, 0, R  ; 右に10ピクセル動かす
-} else {
-    Send d  ; 通常のDキーとして機能
-}
-return
+#If
