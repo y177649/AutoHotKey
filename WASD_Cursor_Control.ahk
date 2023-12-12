@@ -10,6 +10,7 @@ slowSpeed := speed * 0.3
 ; ALT + Dでモード切替
 !d::
     cursorMode := !cursorMode
+    ShowModePopup()
     if cursorMode
         BlockInput, On
     else
@@ -42,3 +43,16 @@ return
     !s::MouseClick, WheelDown
 
 #If
+
+; モード表示のポップアップ
+ShowModePopup() {
+    global cursorMode
+    modeText := cursorMode ? "Mode: Cursor" : "Mode: Input"
+    ToolTip %modeText%
+    SetTimer, RemoveToolTip, -2000  ; 2秒後にツールチップを非表示にする
+}
+
+; ツールチップを非表示にする
+RemoveToolTip:
+    ToolTip
+return
