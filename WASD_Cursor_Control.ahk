@@ -4,18 +4,16 @@ SendMode Input
 SetWorkingDir %A_ScriptDir%
 
 cursorMode := false
-speed := 70
-slowSpeed := speed * 0.1
+speed := 10
+slowSpeed := speed * 0.3
 
-; Fキーでモード切替
-F::
-    if (A_PriorHotkey = "F" and A_TimeSincePriorHotkey < 400) {
-        cursorMode := !cursorMode
-        if cursorMode
-            BlockInput, On
-        else
-            BlockInput, Off
-    }
+; ALT + Dでモード切替
+!d::
+    cursorMode := !cursorMode
+    if cursorMode
+        BlockInput, On
+    else
+        BlockInput, Off
 return
 
 ; Mode:cursorでのWASDカーソル操作
