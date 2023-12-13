@@ -4,11 +4,11 @@ SendMode Input
 SetWorkingDir %A_ScriptDir%
 
 cursorMode := false
-speed := 10
-slowSpeed := speed * 0.3
+speed := 200
+slowSpeed := speed * 0.05
 
-; ALT + Dでモード切替
-!d::
+; ALT + Qでモード切替
+!q::
     cursorMode := !cursorMode
     ShowModePopup()
     if cursorMode
