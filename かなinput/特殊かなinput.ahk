@@ -34,7 +34,7 @@ send, a
 return
 
 ; き
-k & i::
+k & j::
 send, k
 sleep, 10
 send, i
@@ -146,7 +146,7 @@ send, i
 return
 
 ; ぬ
-n & u::
+n & f::
 send, n
 sleep, 10
 send, u
@@ -181,8 +181,8 @@ send, i
 return
 
 ; ふ
-f & u::
-send, f
+h & f::
+send, h
 sleep, 10
 send, u
 return
@@ -216,7 +216,7 @@ send, i
 return
 
 ; む
-m & u::
+m & f::
 send, m
 sleep, 10
 send, u
@@ -244,7 +244,7 @@ send, a
 return
 
 ; ゆ
-y & u::
+y & f::
 send, y
 sleep, 10
 send, u
@@ -392,7 +392,7 @@ sleep, 10
 send, u
 return
 
-d & e::
+d & j::
 send, d
 sleep, 10
 send, e
@@ -405,7 +405,7 @@ send, o
 return
 
 ; ざ行
-z & a::
+z & x::
 send, z
 sleep, 10
 send, a
