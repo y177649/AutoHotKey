@@ -309,6 +309,8 @@ return
 ; ん (末尾の文字としてのみ使用)
 n::
 send, n
+sleep,10
+send, n
 return
 
 ; ぱ行
@@ -466,7 +468,15 @@ sleep, 10
 send, o
 return
 
-/*
+q::
+send, x
+sleep, 10
+send, t
+sleep, 10
+send, u
+return
+
+/*-----------------------------
 ; びゃ行
 b & ya::
 send, b
