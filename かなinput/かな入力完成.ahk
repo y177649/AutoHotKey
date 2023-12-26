@@ -1,6 +1,7 @@
 #Persistent
 SetTimer, CheckKeyboardLayout, 1000
 
+Global LastLayout := 0
 Global IsJapaneseLayout := false
 
 CheckKeyboardLayout:
@@ -8,13 +9,26 @@ CheckKeyboardLayout:
     keyboardLayout := DllCall("GetKeyboardLayout", "UInt", threadId, "UInt")
     layoutId := keyboardLayout & 0xFFFF
 
-    if (layoutId = 0x0411) {
-        IsJapaneseLayout := true
-        Tooltip, Japanese keyboard layout active
-    } else {
-        IsJapaneseLayout := false
-        Tooltip, Other keyboard layout active
+    if (layoutId != LastLayout) {
+        if (layoutId = 0x0411) {
+            IsJapaneseLayout := true
+            ShowTooltip("Japanese Microsoft IME")
+        } else {
+            IsJapaneseLayout := false
+            ShowTooltip("English US") ;. layoutId)
+        }
     }
+
+    LastLayout := layoutId
+return
+
+ShowTooltip(text) {
+    Tooltip, %text%
+    SetTimer, RemoveTooltip, -1000  ; 1秒後にツールチップを消す
+}
+
+RemoveTooltip:
+    Tooltip  ; ツールチップを消す
 return
 
 ^!x::ExitApp
@@ -660,5 +674,3 @@ send
 */
 
 #If
-
-; その他のグローバルまたは共通のキー設定をここに追加できます。
