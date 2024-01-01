@@ -37,6 +37,152 @@ return
 
 #UseHook
 
+; きゃ, きゅ, きょ (kya, kyu, kyo)
+k & y:: 
+    Send, ky
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+; しゃ, しゅ, しょ (sya, syu, syo)
+s & y:: 
+    Send, sy
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+; ちゃ, ちゅ, ちょ (tya, tyu, tyo)
+t & y:: 
+    Send, ty
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+; にゃ, にゅ, にょ (nya, nyu, nyo)
+n & y:: 
+    Send, ny
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+; ひゃ, ひゅ, ひょ (hya, hyu, hyo)
+h & y:: 
+    Send, hy
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+; みゃ, みゅ, みょ (mya, myu, myo)
+m & y:: 
+    Send, my
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+; りゃ, りゅ, りょ (rya, ryu, ryo)
+r & y:: 
+    Send, ry
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+; ぎゃ, ぎゅ, ぎょ (gya, gyu, gyo)
+g & y:: 
+    Send, gy
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+/*
+; じゃ, じゅ, じょ (ja, ju, jo)
+j & a:: 
+    Send, ja
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+*/
+
+; ぢゃ, ぢゅ, ぢょ (zya, zyu, zyo)
+z & y:: 
+    Send, dy
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+; びゃ, びゅ, びょ (bya, byu, byo)
+b & y:: 
+    Send, by
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
+; ぴゃ, ぴゅ, ぴょ (pya, pyu, pyo)
+p & y:: 
+    Send, py
+    Input, Key, L1 T0.1
+    if Key = a
+        Send, a
+    else if Key = u
+        Send, u
+    else if Key = o
+        Send, o
+return
+
 ; あ
 a::
 send, a
@@ -512,165 +658,5 @@ send, t
 sleep, 10
 send, u
 return
-
-/*-----------------------------
-; びゃ行
-b & ya::
-send, b
-sleep, 10
-send, yo
-return
-
-byu::
-send, b
-sleep, 10
-send, yu
-return
-
-byo::
-send, b
-sleep, 10
-send, yo
-return
-
-; ぢゃ行
-dya::
-send, d
-sleep, 10
-send, ya
-return
-
-dyu::
-send, d
-sleep, 10
-send, yu
-return
-
-dyo::
-send, d
-sleep, 10
-send, yo
-return
-
-; じゃ行
-ja::
-send, j
-sleep, 10
-send, a
-return
-
-ju::
-send, j
-sleep, 10
-send, u
-return
-
-jo::
-send, j
-sleep, 10
-send, o
-return
-
-; ぎゃ行
-gya::
-send, g
-sleep, 10
-send, ya
-return
-
-gyu::
-send, g
-sleep, 10
-send, yu
-return
-
-gyo::
-send, g
-sleep, 10
-send, yo
-return
-
-; りゃ行
-rya::
-send, r
-sleep, 10
-send, ya
-return
-
-ryu::
-send, r
-sleep, 10
-send, yu
-return
-
-ryo::
-send, r
-sleep, 10
-send, yo
-return
-
-; みゃ行
-mya::
-send, m
-sleep, 10
-send, ya
-return
-
-myu::
-send, m
-sleep, 10
-send, yu
-return
-
-myo::
-send, m
-sleep, 10
-send, yo
-return
-
-; にゃ行
-nya::
-send, n
-sleep, 10
-send, ya
-return
-
-nyu::
-send, n
-sleep, 10
-send, yu
-return
-
-nyo::
-send, n
-sleep, 10
-send, yo
-return
-
-; ちゃ行
-cha::
-send, ch
-sleep, 10
-send, a
-return
-
-chu::
-send, ch
-sleep, 10
-send, u
-return
-
-cho::
-send, ch
-sleep, 10
-send, o
-return
-
-; しゃ行
-sha::
-send, sh
-sleep, 10
-send
-*/
 
 #If
