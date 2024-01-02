@@ -577,7 +577,7 @@ sleep, 10
 send, u
 return
 
-d & j::
+d & f::
 send, d
 sleep, 10
 send, e
@@ -658,5 +658,3 @@ send, t
 sleep, 10
 send, u
 return
-
-#If
