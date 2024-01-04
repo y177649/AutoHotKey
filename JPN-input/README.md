@@ -2,33 +2,33 @@
 
 |   | あ | い | う | え | お |
 |---|----|----|----|----|----|
-|   | a  | i  | u  | e  | o  |
+|   | A  | I  | U  | E  | O  |
 |   |    |    |    |    |    |
-| か| k & a | k & j | k & u | k & e | k & o |
-| さ| s & a | s & i | s & u | s & e | s & o |
-| た| t & a | t & i | t & u | t & e | t & o |
-| な| n & a | n & i | n & d | n & e | n & o |
-| は| h & a | h & i | h & d | h & e | h & o |
-| ま| m & a | m & i | m & d | m & e | m & o |
-| や| y & a |      | y & f |      | y & o |
-| ら| r & a | r & i | r & u | r & e | r & o |
-| わ| w & a |      | w & o |      | n    |
+| か| K & A | K & J | K & U | K & E | K & O |
+| さ| S & A | S & I | S & U | S & E | S & O |
+| た| T & A | T & I | T & U | T & E | T & O |
+| な| N & A | N & I | N & D | N & E | N & O |
+| は| H & A | H & I | H & D | H & E | H & O |
+| ま| M & A | M & I | M & D | M & E | M & O |
+| や| Y & A |      | Y & F |      | Y & O |
+| ら| R & A | R & I | R & U | R & E | R & O |
+| わ| W & A |      | W & O |      | N    |
 |   |      |      |      |      |      |
-| が| g & a | g & i | g & u | g & e | g & o |
-| ざ| z & x | z & i | z & u | z & e | z & o |
-| だ| d & a | z & y | d & u | d & f | d & o |
-| ば| b & a | b & i | b & u | b & e | b & o |
-| ぱ| p & a | p & i | p & u | p & e | p & o |
+| が| G & A | G & I | G & U | G & E | G & O |
+| ざ| Z & X | Z & I | Z & U | Z & E | Z & O |
+| だ| D & A | Z & Y | D & U | D & F | D & O |
+| ば| B & A | B & I | B & U | B & E | B & O |
+| ぱ| P & A | P & I | P & U | P & E | P & O |
 |   |      |      |      |      |      |
-| きゃ| k & y a |      | k & y u |      | k & y o |
-| しゃ| s & y a |      | s & y u |      | s & y o |
-| ちゃ| t & y a |      | t & y u |      | t & y o |
-| にゃ| n & f a |      | n & f u |      | n & f o |
-| ひゃ| h & f a |      | h & f u |      | h & f o |
-| みゃ| m & f a |      | m & f u |      | m & f o |
-| りゃ| r & y a |      | r & y u |      | r & y o |
-| ぎゃ| g & y a |      | g & y u |      | g & y o |
-| じゃ| j & a   |      | j & f   |      | j & o   |
-| ぢゃ| z & y a |      | z & y u |      | z & y o |
-| びゃ| b & y a |      | b & y u |      | b & y o |
-| ぴゃ| p & y a |      | p & y u |      | p & y o |
+| きゃ| K & Y A |      | K & Y U |      | K & Y O |
+| しゃ| S & Y A |      | S & Y U |      | S & Y O |
+| ちゃ| T & Y A |      | T & Y U |      | T & Y O |
+| にゃ| N & F A |      | N & F U |      | N & F O |
+| ひゃ| H & F A |      | H & F U |      | H & F O |
+| みゃ| M & F A |      | M & F U |      | M & F O |
+| りゃ| R & Y A |      | R & Y U |      | R & Y O |
+| ぎゃ| G & Y A |      | G & Y U |      | G & Y O |
+| じゃ| J & A   |      | J & F   |      | J & O   |
+| ぢゃ| Z & Y A |      | Z & Y U |      | Z & Y O |
+| びゃ| B & Y A |      | B & Y U |      | B & Y O |
+| ぴゃ| P & Y A |      | P & Y U |      | P & Y O |
