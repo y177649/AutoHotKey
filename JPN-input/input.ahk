@@ -350,7 +350,7 @@ send, i
 return
 
 ; ぬ
-n & f::
+n & d::
 send, n
 sleep, 10
 send, u
@@ -385,7 +385,7 @@ send, i
 return
 
 ; ふ
-h & f::
+h & d::
 send, h
 sleep, 10
 send, u
@@ -420,7 +420,7 @@ send, i
 return
 
 ; む
-m & f::
+m & d::
 send, m
 sleep, 10
 send, u
