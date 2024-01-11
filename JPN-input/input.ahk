@@ -74,7 +74,7 @@ t & y::
 return
 
 ; にゃ, にゅ, にょ (nya, nyu, nyo)
-n & f:: 
+n & d:: 
     Send, ny
     Input, Key, L1 T0.1
     if Key = a
@@ -86,7 +86,7 @@ n & f::
 return
 
 ; ひゃ, ひゅ, ひょ (hya, hyu, hyo)
-h & f:: 
+h & d:: 
     Send, hy
     Input, Key, L1 T0.1
     if Key = a
@@ -98,7 +98,7 @@ h & f::
 return
 
 ; みゃ, みゅ, みょ (mya, myu, myo)
-m & f:: 
+m & d:: 
     Send, my
     Input, Key, L1 T0.1
     if Key = a
@@ -191,7 +191,7 @@ send, a
 return
 
 ; じゅ
-j & f::
+j & d::
 send, j
 sleep, 10
 send, u
@@ -350,7 +350,7 @@ send, i
 return
 
 ; ぬ
-n & d::
+n & f::
 send, n
 sleep, 10
 send, u
@@ -385,7 +385,7 @@ send, i
 return
 
 ; ふ
-h & d::
+h & f::
 send, h
 sleep, 10
 send, u
@@ -420,7 +420,7 @@ send, i
 return
 
 ; む
-m & d::
+m & f::
 send, m
 sleep, 10
 send, u
